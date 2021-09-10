@@ -37,34 +37,6 @@ enum Page {
     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 20, maxHeight: 40, alignment: .top)
 }
 
-@ViewBuilder func generateBottomNav() -> some View {
-    ZStack {
-        HStack {
-            
-            Button(action: {
-                    print("Home Clicked")
-            }){
-                Image(systemName: "house")
-            }
-            Spacer()
-            Button(action: {
-                    print("Camera Clicked")
-            }){
-                Image(systemName: "camera")
-            }
-            Spacer()
-            Button(action: {
-                    print("Settings Clicked")
-            }){
-                Image(systemName: "gearshape")
-            }
-        
-        }.padding(.all, 10.0).foregroundColor(.white)
-    }
-    .navigationBarTitle(Text("SwiftUI")).background(Color.blue)
-    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 20, maxHeight: 40, alignment: .top)
-}
-
 struct SafeView: ViewModifier {
     var geometry: GeometryProxy
     var ignoreTop: Bool
@@ -87,11 +59,38 @@ struct SafeView: ViewModifier {
 
 
 protocol PContentView: View {
-    var currentPage: Page { get }
+    var viewModel: ContentViewModel { get }
 }
 
 struct ContentView: PContentView {
-    internal var currentPage:Page = .home
+    @ObservedObject var viewModel: ContentViewModel
+    
+    @ViewBuilder func generateBottomNav() -> some View {
+        ZStack {
+            HStack {
+                Button(action: {
+                    viewModel.changePage(Page.home)
+                }){
+                    Image(systemName: "house")
+                }
+                Spacer()
+                Button(action: {
+                    viewModel.changePage(Page.page1)
+                }){
+                    Image(systemName: "camera")
+                }
+                Spacer()
+                Button(action: {
+                    viewModel.changePage(Page.page2)
+                }){
+                    Image(systemName: "gearshape")
+                }
+            
+            }.padding(.all, 10.0).foregroundColor(.white)
+        }
+        .navigationBarTitle(Text("SwiftUI")).background(Color.blue)
+        .frame(minWidth: 0, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 20, maxHeight: 40, alignment: .top)
+    }
     
     var body: some View {
         ZStack {
@@ -102,7 +101,7 @@ struct ContentView: PContentView {
                     GeometryReader { bodyGeometry in
                     ScrollView {
                         VStack {
-                            currentPage.generatePage(geometry: bodyGeometry)
+                            viewModel.currentPage.generatePage(geometry: bodyGeometry)
                         }
                     }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).background(Color.white)
                     }
@@ -114,9 +113,9 @@ struct ContentView: PContentView {
     }
 }
 
-struct ContentView_Previews:
-    PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews:
+//    PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CAF3B7226EBE78C007021B7 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF3B7126EBE78C007021B7 /* ContentViewModel.swift */; };
 		9CBB650026E9179D00F3D495 /* Learning_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */; };
 		9CBB650226E9179D00F3D495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB650126E9179D00F3D495 /* ContentView.swift */; };
 		9CBB650426E917A000F3D495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB650326E917A000F3D495 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CAF3B7126EBE78C007021B7 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		9CBB64FC26E9179D00F3D495 /* Learning SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9CBB650126E9179D00F3D495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CAF3B7026EBE773007021B7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CAF3B7126EBE78C007021B7 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9CBB64F326E9179D00F3D495 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		9CBB64FE26E9179D00F3D495 /* Learning SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9CAF3B7026EBE773007021B7 /* ViewModel */,
 				9CBB652A26E917AD00F3D495 /* Views */,
 				9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */,
 				9CBB650126E9179D00F3D495 /* ContentView.swift */,
@@ -298,6 +309,7 @@
 				9CBB653926EA901000F3D495 /* Pie.swift in Sources */,
 				9CBB653326E98F9D00F3D495 /* Page1.swift in Sources */,
 				9CBB653126E98F7800F3D495 /* Home.swift in Sources */,
+				9CAF3B7226EBE78C007021B7 /* ContentViewModel.swift in Sources */,
 				9CBB652C26E917C400F3D495 /* CardView.swift in Sources */,
 				9CBB653526E98FAB00F3D495 /* Page2.swift in Sources */,
 				9CBB650026E9179D00F3D495 /* Learning_SwiftUIApp.swift in Sources */,
