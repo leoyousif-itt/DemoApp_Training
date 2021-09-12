@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)"
+options: "0d6a8871303f7ef278ba2a90c194d007"
+build_time: [1631415605, 784639000]
+inputs:
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/CardViewProtocol.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ContentView.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Pie.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page1.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Home.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ViewModel/ContentViewModel.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/CardView.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page2.swift": [9223372036, 854775807]
+  "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Learning_SwiftUIApp.swift": [9223372036, 854775807]

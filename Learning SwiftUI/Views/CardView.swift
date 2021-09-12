@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-struct CardView: CardViewProtocol {
+
+struct Cardify: CardViewProtocol {
     var content: String = "default"
     var cornerRaduis: CGFloat = 12.00
     var color: Color = Color(red: 144/255, green: 144/255, blue: 144/255)
@@ -16,7 +17,7 @@ struct CardView: CardViewProtocol {
         let roundedrectangle = RoundedRectangle(cornerRadius: cornerRaduis)
         
         if flipped {
-            Pie(startAngle: Angle(degrees: -90), endAngle: Angle(degrees: 0)).padding().opacity(0.4)
+            Pie(startAngle: Angle(degrees: 0-60), endAngle: Angle(degrees: 110-90)).padding().opacity(0.4)
             roundedrectangle.stroke(color)
         }
         else {
@@ -35,16 +36,24 @@ struct CardView: CardViewProtocol {
         }
     }
     
-    var body: some View {
-        ZStack {
+    func body(content: Content) -> some View {
+        ZStack{
             generateRoundedRectangle
-            generateText
+            content
         }
+        
+        
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView(content: "Hello")
+extension View {
+    func cardify() -> some View {
+        self.modifier(Cardify())
     }
 }
+
+//struct CardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CardView(content: "Hello")
+//    }
+//}

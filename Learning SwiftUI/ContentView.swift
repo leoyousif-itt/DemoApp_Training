@@ -21,13 +21,20 @@ enum Page {
     }
 }
 
-@ViewBuilder func generateTopNav() -> some View {
+@ViewBuilder func generateTopNav(_ viewModel: ContentViewModel) -> some View {
     ZStack {
-        Rectangle().fill(Color.blue)
         HStack {
-            Image(systemName: "ellipsis")
+            Button(action: {
+                viewModel.sideMenuOpened.toggle()
+            }){
+                Image(systemName: "ellipsis")
+            }
             Spacer()
-            Image(systemName: "stethoscope")
+            Button(action: {
+                viewModel.changePage(Page.home)
+            }){
+                Image(systemName: "stethoscope")
+            }
             Spacer()
             Image(systemName: "person")
             
@@ -36,6 +43,34 @@ enum Page {
     }
     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 20, maxHeight: 40, alignment: .top)
 }
+
+@ViewBuilder func generateBottomNav(_ viewModel: ContentViewModel) -> some View {
+    ZStack {
+        HStack {
+            Button(action: {
+                viewModel.changePage(Page.home)
+            }){
+                Image(systemName: "house")
+            }
+            Spacer()
+            Button(action: {
+                viewModel.changePage(Page.page1)
+            }){
+                Image(systemName: "camera")
+            }
+            Spacer()
+            Button(action: {
+                viewModel.changePage(Page.page2)
+            }){
+                Image(systemName: "gearshape")
+            }
+            
+        }.padding(.all, 10.0).foregroundColor(.white)
+    }
+    .navigationBarTitle(Text("SwiftUI"))
+    .frame(minWidth: 0, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 20, maxHeight: 40, alignment: .top)
+}
+
 
 struct SafeView: ViewModifier {
     var geometry: GeometryProxy
@@ -57,57 +92,53 @@ struct SafeView: ViewModifier {
     }
 }
 
-
-protocol PContentView: View {
+protocol PContentView: View { 
     var viewModel: ContentViewModel { get }
 }
 
 struct ContentView: PContentView {
     @ObservedObject var viewModel: ContentViewModel
     
-    @ViewBuilder func generateBottomNav() -> some View {
-        ZStack {
-            HStack {
-                Button(action: {
-                    viewModel.changePage(Page.home)
-                }){
-                    Image(systemName: "house")
-                }
-                Spacer()
-                Button(action: {
-                    viewModel.changePage(Page.page1)
-                }){
-                    Image(systemName: "camera")
-                }
-                Spacer()
-                Button(action: {
-                    viewModel.changePage(Page.page2)
-                }){
-                    Image(systemName: "gearshape")
-                }
-            
-            }.padding(.all, 10.0).foregroundColor(.white)
-        }
-        .navigationBarTitle(Text("SwiftUI")).background(Color.blue)
-        .frame(minWidth: 0, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 20, maxHeight: 40, alignment: .top)
-    }
-    
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-                VStack {
-                    generateTopNav().modifier(SafeView(geometry: geometry, ignoreTop: false))
-                    Spacer()
-                    GeometryReader { bodyGeometry in
-                    ScrollView {
-                        VStack {
-                            viewModel.currentPage.generatePage(geometry: bodyGeometry)
+                let item = ZStack {
+                    VStack {
+                        generateTopNav(viewModel).modifier(SafeView(geometry: geometry, ignoreTop: false))
+                        Spacer()
+                        GeometryReader { bodyGeometry in
+                            ScrollView {
+                                VStack {
+                                    viewModel.currentPage.generatePage(geometry: bodyGeometry)
+                                }
+                            }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).background(Color.white)
                         }
-                    }.frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).background(Color.white)
+                        Spacer()
+                        generateBottomNav(viewModel).modifier(SafeView(geometry: geometry, ignoreTop: true))
+                    }.background(Color.blue).ignoresSafeArea()
+                }
+                
+                if(viewModel.sideMenuOpened){
+                    item.disabled(true).opacity(0.75).onTapGesture {
+                        if viewModel.sideMenuOpened {
+                            viewModel.sideMenuOpened.toggle()
+                        }
                     }
-                    Spacer()
-                    generateBottomNav().modifier(SafeView(geometry: geometry, ignoreTop: true))
-                }.background(Color.blue).ignoresSafeArea()
+                    
+                    VStack{
+                        Text("Menu").underline().padding().foregroundColor(.white).modifier(SafeView(geometry: geometry, ignoreTop: false))
+                        VStack {
+                            Text("Item 1").foregroundColor(.white).padding(.bottom, 5.00)
+                            Text("Item 2").foregroundColor(.white).padding(.bottom, 5.00)
+                            Text("Item 3").foregroundColor(.white).padding(.bottom, 5.00)
+                            
+                        }.padding()
+                        
+                    }.frame(minWidth: geometry.size.width / 3.00, idealWidth: geometry.size.width / 3.00, maxWidth: geometry.size.width / 3.00, minHeight: 100, idealHeight: .infinity, maxHeight: .infinity, alignment: .top).background(Color.blue).ignoresSafeArea()
+                }
+                else{
+                    item
+                }
             }
         }
     }

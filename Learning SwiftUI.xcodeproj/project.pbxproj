@@ -58,7 +58,7 @@
 		9CBB653026E98F7800F3D495 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		9CBB653226E98F9D00F3D495 /* Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1.swift; sourceTree = "<group>"; };
 		9CBB653426E98FAB00F3D495 /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
-		9CBB653826EA901000F3D495 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		9CBB653826EA901000F3D495 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +120,11 @@
 				9CAF3B7026EBE773007021B7 /* ViewModel */,
 				9CBB652A26E917AD00F3D495 /* Views */,
 				9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */,
+				9CBB653826EA901000F3D495 /* Pie.swift */,
 				9CBB650126E9179D00F3D495 /* ContentView.swift */,
 				9CBB650326E917A000F3D495 /* Assets.xcassets */,
 				9CBB650826E917A000F3D495 /* Info.plist */,
 				9CBB650526E917A000F3D495 /* Preview Content */,
-				9CBB653826EA901000F3D495 /* Pie.swift */,
 			);
 			path = "Learning SwiftUI";
 			sourceTree = "<group>";
