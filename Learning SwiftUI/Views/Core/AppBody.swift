@@ -10,10 +10,10 @@ import SwiftUI
 struct AppBody: View {
     @ObservedObject var viewModel: ContentViewModel
     
-    @ViewBuilder private func generateCurrentPage() -> some View {
+    @ViewBuilder private func generateCurrentPage(geometry: GeometryProxy) -> some View {
         GeometryReader { bodyGeometry in
             ScrollView {
-                viewModel.currentPage.generatePage(geometry: bodyGeometry)
+                viewModel.currentPage.generatePage(geometry: bodyGeometry).safeView(geometry: geometry, ignoreTop: true)
                
             }
         }
@@ -25,17 +25,8 @@ struct AppBody: View {
                 generateTopNav(viewModel)
                     .safeView(geometry: geometry, ignoreTop: false)
                 
-                generateCurrentPage()
-                    .frame(
-                        minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
-                        idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,
-                        maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
-                        minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
-                        idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,
-                        maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
-                        alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                generateCurrentPage(geometry: geometry)
                     .background(Color.white)
-                
                 generateBottomNav(viewModel)
                     .safeView(geometry: geometry, ignoreTop: true)
             }.background(Color.blue).ignoresSafeArea()

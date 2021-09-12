@@ -9,9 +9,10 @@ import SwiftUI
 
 struct SafeView: ViewModifier {
     var geometry: GeometryProxy
-    var ignoreTop: Bool
+    var ignoreTop: Bool = false
     
     func body(content: Content) -> some View {
+      
         if(ignoreTop){
             content
                 .padding(.bottom, geometry.safeAreaInsets.bottom)
