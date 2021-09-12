@@ -40,9 +40,7 @@ struct Cardify: CardViewProtocol {
         ZStack{
             generateRoundedRectangle
             content
-        }
-        
-        
+       }
     }
 }
 

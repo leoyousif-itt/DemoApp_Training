@@ -24,6 +24,8 @@ struct Pie: Shape {
     var endAngle: Angle
 
     func path(in rect: CGRect) -> Path {
+        
+        
         let center = CGPoint(x: rect.midX, y: rect.midY)
         let radius: CGFloat = min(rect.width, rect.height) / 2
         
@@ -35,7 +37,6 @@ struct Pie: Shape {
         var p = Path()
         p.move(to: center)
         p.addLine(to: start)
-        
         p.addArc(
             center: center,
             radius: radius,
@@ -46,5 +47,28 @@ struct Pie: Shape {
         return p
     }
 }
+
+//messing around
+
+struct Pieify: ViewModifier {
+
+    var startAngle: Angle
+    var endAngle: Angle
+
+    func body(content: Content) -> some View {
+        ZStack {
+            Pie(startAngle: startAngle, endAngle: endAngle)
+            content
+        }
+    }
+}
+
+extension Shape {
+    func pieify(startAngle: Angle, endAngle: Angle) -> some View {
+        self.modifier(Pieify(startAngle: startAngle, endAngle: endAngle))
+    }
+}
+
+
 
 
