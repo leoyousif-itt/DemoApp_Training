@@ -56,7 +56,6 @@ struct AppBody: View {
         }
     }
     
-    
     var body: some View {
         ZStack {
             GeometryReader { geometry in

@@ -47,28 +47,3 @@ struct Pie: Shape {
         return p
     }
 }
-
-//messing around
-
-struct Pieify: ViewModifier {
-
-    var startAngle: Angle
-    var endAngle: Angle
-
-    func body(content: Content) -> some View {
-        ZStack {
-            Pie(startAngle: startAngle, endAngle: endAngle)
-            content
-        }
-    }
-}
-
-extension Shape {
-    func pieify(startAngle: Angle, endAngle: Angle) -> some View {
-        self.modifier(Pieify(startAngle: startAngle, endAngle: endAngle))
-    }
-}
-
-
-
-

@@ -8,7 +8,6 @@
 import SwiftUI
 
 protocol CardViewProtocol : ViewModifier {
-    var content: String { get set }
     var cornerRaduis: CGFloat { get }
     var color: Color { get set }
     var flipped: Bool { get }

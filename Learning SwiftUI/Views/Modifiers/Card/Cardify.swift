@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct Cardify: CardViewProtocol {
-    var content: String = "default"
     var cornerRaduis: CGFloat = 12.00
     var color: Color = Color(red: 144/255, green: 144/255, blue: 144/255)
     var flipped = true
     
-    @ViewBuilder var generateRoundedRectangle: some View {
+    @ViewBuilder func generateRoundedRectangle(_ content: Content) -> some View {
         let roundedrectangle = RoundedRectangle(cornerRadius: cornerRaduis)
         
         if flipped {
-            Pie(startAngle: Angle(degrees: 0-60), endAngle: Angle(degrees: 110-90)).padding().opacity(0.4)
+            content
             roundedrectangle.stroke(color)
         }
         else {
@@ -26,20 +25,9 @@ struct Cardify: CardViewProtocol {
         
     }
     
-    var generateText: some View {
-        let text: Text = Text(content)
-        
-        return ZStack {
-            if flipped {
-                text.foregroundColor(color)
-            }
-        }
-    }
-    
     func body(content: Content) -> some View {
         ZStack{
-            generateRoundedRectangle
-            content
+            generateRoundedRectangle(content)
        }
     }
 }

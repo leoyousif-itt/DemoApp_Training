@@ -15,6 +15,7 @@
 		9CBA2AA726EDBCCF00062663 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2AA626EDBCCF00062663 /* Pie.swift */; };
 		9CBA2AAA26EDC0A100062663 /* AppBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2AA926EDC0A100062663 /* AppBody.swift */; };
 		9CBA2AAC26EDCBFF00062663 /* LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2AAB26EDCBFF00062663 /* LeftMenu.swift */; };
+		9CBA2AAE26EDD4B600062663 /* mainLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA2AAD26EDD4B600062663 /* mainLogo.png */; };
 		9CBB650026E9179D00F3D495 /* Learning_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */; };
 		9CBB650226E9179D00F3D495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB650126E9179D00F3D495 /* ContentView.swift */; };
 		9CBB650426E917A000F3D495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB650326E917A000F3D495 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		9CBA2AA626EDBCCF00062663 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 		9CBA2AA926EDC0A100062663 /* AppBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBody.swift; sourceTree = "<group>"; };
 		9CBA2AAB26EDCBFF00062663 /* LeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenu.swift; sourceTree = "<group>"; };
+		9CBA2AAD26EDD4B600062663 /* mainLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainLogo.png; path = "Learning SwiftUI/Views/Navbars/mainLogo.png"; sourceTree = SOURCE_ROOT; };
 		9CBB64FC26E9179D00F3D495 /* Learning SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9CBB650126E9179D00F3D495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		9CBA2A9826EDB82000062663 /* Navbars */ = {
 			isa = PBXGroup;
 			children = (
+				9CBA2AAD26EDD4B600062663 /* mainLogo.png */,
 				9CBA2A9926EDB84100062663 /* TopNavBuilder.swift */,
 				9CBA2A9B26EDB86800062663 /* BottomNavBuilder.swift */,
 				9CBA2AAB26EDCBFF00062663 /* LeftMenu.swift */,
@@ -338,6 +341,7 @@
 			files = (
 				9CBB650726E917A000F3D495 /* Preview Assets.xcassets in Resources */,
 				9CBB650426E917A000F3D495 /* Assets.xcassets in Resources */,
+				9CBA2AAE26EDD4B600062663 /* mainLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
