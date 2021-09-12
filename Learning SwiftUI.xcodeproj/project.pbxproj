@@ -14,6 +14,7 @@
 		9CBA2A9F26EDB89A00062663 /* SafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2A9E26EDB89A00062663 /* SafeView.swift */; };
 		9CBA2AA726EDBCCF00062663 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2AA626EDBCCF00062663 /* Pie.swift */; };
 		9CBA2AAA26EDC0A100062663 /* AppBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2AA926EDC0A100062663 /* AppBody.swift */; };
+		9CBA2AAC26EDCBFF00062663 /* LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2AAB26EDCBFF00062663 /* LeftMenu.swift */; };
 		9CBB650026E9179D00F3D495 /* Learning_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */; };
 		9CBB650226E9179D00F3D495 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB650126E9179D00F3D495 /* ContentView.swift */; };
 		9CBB650426E917A000F3D495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB650326E917A000F3D495 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		9CBA2A9E26EDB89A00062663 /* SafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeView.swift; sourceTree = "<group>"; };
 		9CBA2AA626EDBCCF00062663 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 		9CBA2AA926EDC0A100062663 /* AppBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBody.swift; sourceTree = "<group>"; };
+		9CBA2AAB26EDCBFF00062663 /* LeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenu.swift; sourceTree = "<group>"; };
 		9CBB64FC26E9179D00F3D495 /* Learning SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBB64FF26E9179D00F3D495 /* Learning_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9CBB650126E9179D00F3D495 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				9CBA2A9926EDB84100062663 /* TopNavBuilder.swift */,
 				9CBA2A9B26EDB86800062663 /* BottomNavBuilder.swift */,
+				9CBA2AAB26EDCBFF00062663 /* LeftMenu.swift */,
 			);
 			path = Navbars;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				9CBB650226E9179D00F3D495 /* ContentView.swift in Sources */,
 				9CBA2AA726EDBCCF00062663 /* Pie.swift in Sources */,
 				9CBB653326E98F9D00F3D495 /* Page1.swift in Sources */,
+				9CBA2AAC26EDCBFF00062663 /* LeftMenu.swift in Sources */,
 				9CBB653126E98F7800F3D495 /* Home.swift in Sources */,
 				9CBA2A9726EDB7FD00062663 /* Page.swift in Sources */,
 				9CAF3B7226EBE78C007021B7 /* ContentViewModel.swift in Sources */,
