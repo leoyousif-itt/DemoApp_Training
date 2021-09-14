@@ -7,14 +7,22 @@
 
 import SwiftUI
 
-struct Page2: View {
+struct Page2: Page {
+    var geometry: GeometryProxy
+    
+    var defaultCardSize: CGSize {
+        CGSize(
+            width: 100, height: (geometry.size.height - 40.0) / 2.00
+        )
+    }
+    
     var body: some View {
-        Text("Page 2")
+            Text("Page 2").modifier(
+                DefaultPageCard(
+                    defaultCardSize: defaultCardSize
+                )
+            ).padding()
+        
     }
 }
 
-struct Page2_Previews: PreviewProvider {
-    static var previews: some View {
-        Page2()
-    }
-}

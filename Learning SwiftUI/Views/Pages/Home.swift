@@ -7,26 +7,7 @@
 
 import SwiftUI
 
-struct DefaultPageCard: ViewModifier{
-    var defaultCardSize: CGSize
-    
-    func body(content: Content) -> some View {
-        content
-            .padding()
-            .cardify()
-            .frame(
-                minWidth: 0,
-                idealWidth: 100,
-                maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
-                minHeight: defaultCardSize.height,
-                idealHeight: defaultCardSize.height,
-                maxHeight:defaultCardSize.height,
-                alignment: .center
-            )
-    }
-}
-
-struct Home: View {
+struct Home: Page {
     var geometry: GeometryProxy
     
     var defaultCardSize: CGSize {
@@ -50,6 +31,11 @@ struct Home: View {
                 startAngle: Angle(degrees: -90),
                 endAngle: Angle(degrees: 90)
             ).modifier(
+                DefaultPageCard(
+                    defaultCardSize: defaultCardSize
+                )
+            )
+            Text("hello").modifier(
                 DefaultPageCard(
                     defaultCardSize: defaultCardSize
                 )

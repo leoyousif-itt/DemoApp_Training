@@ -4,17 +4,25 @@
 //
 //  Created by Leo Yousif on 9/11/21.
 //
-
 import SwiftUI
 
 struct AppBody: View {
     @ObservedObject var viewModel: ContentViewModel
     
+    @ViewBuilder func generatePage(appGeometry: GeometryProxy, bodyGeometry:GeometryProxy) -> some View {
+        CurrentPage(currentPage: viewModel.currentPage, geometry: bodyGeometry){ geometry in
+            Home(geometry: geometry)
+        } renderPage1: { geometry in
+            Page1(geometry: geometry)
+        } renderPage2: {geometry in
+            Page2(geometry: geometry)
+        }.safeView(geometry: appGeometry, ignoreTop: true)
+    }
+    
     @ViewBuilder private func generateCurrentPage(geometry: GeometryProxy) -> some View {
         GeometryReader { bodyGeometry in
             ScrollView {
-                viewModel.currentPage.generatePage(geometry: bodyGeometry).safeView(geometry: geometry, ignoreTop: true)
-               
+                generatePage(appGeometry: geometry, bodyGeometry: bodyGeometry)
             }
         }
     }

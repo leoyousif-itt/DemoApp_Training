@@ -33,7 +33,10 @@ import SwiftUI
             
             GeometryReader { geometry in
                 Button(action: {
-                    viewModel.changePage(Page.home)
+//                    let pageView = EPage<AnyView>.factory(type: .home()){ geometry in
+//                        Home(geometry: geometry)
+//                    }
+//                    viewModel.changePage(pageView)
                 }){
                     
 //                    Image(systemName: "stethoscope")
@@ -44,7 +47,10 @@ import SwiftUI
             
             GeometryReader { geometry in
                 Button(action: {
-                    viewModel.changePage(Page.home)
+//                    let pageView = EPage<AnyView>.factory(type: .home()){ geometry in
+//                        Home(geometry: geometry)
+//                    }
+//                    viewModel.changePage(pageView)
                 }) {
                     
                     Image(systemName: "person").padding().frame(width: geometry.size.width, height: geometry.size.height, alignment: .trailing)

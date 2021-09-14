@@ -11,19 +11,26 @@ import SwiftUI
     ZStack {
         HStack {
             Button(action: {
-                viewModel.changePage(Page.home)
+                viewModel.changePage(.home)
             }){
                 Image(systemName: "house")
             }
             Spacer()
             Button(action: {
-                viewModel.changePage(Page.page1)
+//                let pageView = EPage<AnyView>.factory(type: .page1()) { geometry in
+//                    Page1(geometry: geometry)
+//                }
+                viewModel.changePage(.page1)
             }){
                 Image(systemName: "camera")
             }
             Spacer()
             Button(action: {
-                viewModel.changePage(Page.page2)
+//                let pageView = EPage<AnyView>.factory(type: .page1()) { geometry in
+//                    Page2(geometry: geometry)
+//                }
+                viewModel.changePage(.page2)
+                
             }){
                 Image(systemName: "gearshape")
             }
