@@ -17,7 +17,7 @@
     <a title="Structures  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (23% documented)</p>
+        <p><a href="index.html"> Docs</a> (24% documented)</p>
         <p class="header-right">
           <form role="search" action="search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -47,7 +47,7 @@
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/Page.html">Page</a>
+                <a href="Enums/AppPage.html">AppPage</a>
               </li>
             </ul>
           </li>
@@ -62,6 +62,9 @@
           <li class="nav-group-name">
             <a href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:16Learning_SwiftUI17createTopNavIcons9viewModel5image9alignment6system4name6actionQrAA011ContentViewI0C_0bC05ImageVAK9AlignmentVSbSSypyXEtF">createTopNavIcons(viewModel:image:alignment:system:name:action:)</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Functions.html#/s:16Learning_SwiftUI17generateBottomNavyQrAA16ContentViewModelCF">generateBottomNav(_:)</a>
               </li>
@@ -79,19 +82,34 @@
               <li class="nav-group-task">
                 <a href="Protocols/PContentView.html">PContentView</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PCurrentPage.html">PCurrentPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/Page.html">Page</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/CardView.html">CardView</a>
+                <a href="Structs/AppBody.html">AppBody</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AppBody_Previews.html">AppBody_Previews</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Cardify.html">Cardify</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CurrentPage.html">CurrentPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DefaultPageCard.html">DefaultPageCard</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Home.html">Home</a>
@@ -103,16 +121,13 @@
                 <a href="Structs/Learning_SwiftUIApp.html">Learning_SwiftUIApp</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/LeftMenu.html">LeftMenu</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Page1.html">Page1</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Page1_Previews.html">Page1_Previews</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/Page2.html">Page2</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Page2_Previews.html">Page2_Previews</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Pie.html">Pie</a>
@@ -134,34 +149,6 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI8SafeViewV"></a>
-                    <a name="//apple_ref/swift/Struct/SafeView" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI8SafeViewV">SafeView</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/SafeView.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">SafeView</span> <span class="p">:</span> <span class="kt">ViewModifier</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -213,6 +200,350 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@main</span>
 <span class="kd">struct</span> <span class="kt">Learning_SwiftUIApp</span> <span class="p">:</span> <span class="kt">App</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI7AppBodyV"></a>
+                    <a name="//apple_ref/swift/Struct/AppBody" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI7AppBodyV">AppBody</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Another description</p>
+
+<p>More description</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Make sure you read this
+
+</div><div class="aside aside-version">
+    <p class="aside-title">Version</p>
+    1.0
+
+</div>
+
+<p>Even more description</p>
+
+                        <a href="Structs/AppBody.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">AppBody</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>by</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of Llamas spotted on the trip</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Llama spotter rating between 0 and 1 as a Float</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI16AppBody_PreviewsV"></a>
+                    <a name="//apple_ref/swift/Struct/AppBody_Previews" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI16AppBody_PreviewsV">AppBody_Previews</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/AppBody_Previews.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">AppBody_Previews</span> <span class="p">:</span> <span class="kt">PreviewProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI7CardifyV"></a>
+                    <a name="//apple_ref/swift/Struct/Cardify" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI7CardifyV">Cardify</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/Cardify.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Cardify</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CardViewProtocol.html">CardViewProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI15DefaultPageCardV"></a>
+                    <a name="//apple_ref/swift/Struct/DefaultPageCard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI15DefaultPageCardV">DefaultPageCard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/DefaultPageCard.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">DefaultPageCard</span> <span class="p">:</span> <span class="kt">ViewModifier</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI8SafeViewV"></a>
+                    <a name="//apple_ref/swift/Struct/SafeView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI8SafeViewV">SafeView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/SafeView.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">SafeView</span> <span class="p">:</span> <span class="kt">ViewModifier</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI8LeftMenuV"></a>
+                    <a name="//apple_ref/swift/Struct/LeftMenu" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI8LeftMenuV">LeftMenu</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/LeftMenu.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">LeftMenu</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI11CurrentPageV"></a>
+                    <a name="//apple_ref/swift/Struct/CurrentPage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI11CurrentPageV">CurrentPage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/CurrentPage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">CurrentPage</span><span class="o">&lt;</span><span class="kt">HomeView</span><span class="p">,</span> <span class="kt">Page1View</span><span class="p">,</span> <span class="kt">Page2View</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Protocols/PCurrentPage.html">PCurrentPage</a></span> <span class="k">where</span> <span class="kt">HomeView</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Page.html">Page</a></span><span class="p">,</span> <span class="kt">Page1View</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Page.html">Page</a></span><span class="p">,</span> <span class="kt">Page2View</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Page.html">Page</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI4HomeV"></a>
+                    <a name="//apple_ref/swift/Struct/Home" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI4HomeV">Home</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/Home.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Home</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Page.html">Page</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI13Home_PreviewsV"></a>
+                    <a name="//apple_ref/swift/Struct/Home_Previews" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI13Home_PreviewsV">Home_Previews</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/Home_Previews.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Home_Previews</span> <span class="p">:</span> <span class="kt">PreviewProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI5Page1V"></a>
+                    <a name="//apple_ref/swift/Struct/Page1" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI5Page1V">Page1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/Page1.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page1</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Page.html">Page</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI5Page2V"></a>
+                    <a name="//apple_ref/swift/Struct/Page2" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI5Page2V">Page2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/Page2.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page2</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Page.html">Page</a></span></code></pre>
 
                         </div>
                       </div>
@@ -283,236 +614,12 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI8CardViewV"></a>
-                    <a name="//apple_ref/swift/Struct/CardView" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI8CardViewV">CardView</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/CardView.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">CardView</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CardViewProtocol.html">CardViewProtocol</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI7CardifyV"></a>
-                    <a name="//apple_ref/swift/Struct/Cardify" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI7CardifyV">Cardify</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Cardify.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Cardify</span> <span class="p">:</span> <span class="kt">ViewModifier</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI4HomeV"></a>
-                    <a name="//apple_ref/swift/Struct/Home" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI4HomeV">Home</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Home.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Home</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI13Home_PreviewsV"></a>
-                    <a name="//apple_ref/swift/Struct/Home_Previews" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI13Home_PreviewsV">Home_Previews</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Home_Previews.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Home_Previews</span> <span class="p">:</span> <span class="kt">PreviewProvider</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI5Page1V"></a>
-                    <a name="//apple_ref/swift/Struct/Page1" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI5Page1V">Page1</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Page1.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page1</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI14Page1_PreviewsV"></a>
-                    <a name="//apple_ref/swift/Struct/Page1_Previews" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI14Page1_PreviewsV">Page1_Previews</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Page1_Previews.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page1_Previews</span> <span class="p">:</span> <span class="kt">PreviewProvider</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI5Page2V"></a>
-                    <a name="//apple_ref/swift/Struct/Page2" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI5Page2V">Page2</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Page2.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page2</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16Learning_SwiftUI14Page2_PreviewsV"></a>
-                    <a name="//apple_ref/swift/Struct/Page2_Previews" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16Learning_SwiftUI14Page2_PreviewsV">Page2_Previews</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Page2_Previews.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page2_Previews</span> <span class="p">:</span> <span class="kt">PreviewProvider</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="noopener" rel="external"></a>. All rights reserved. (Last updated: 2021-09-11)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="noopener" rel="external"></a>. All rights reserved. (Last updated: 2021-09-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="noopener" rel="external">jazzy ♪♫ v0.14.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="noopener" rel="external">Realm</a> project.</p>
         </section>
       </article>

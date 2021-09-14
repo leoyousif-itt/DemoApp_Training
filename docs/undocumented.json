@@ -1,6 +1,432 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ContentView.swift",
+      "line": 10,
+      "symbol": "PContentView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ContentView.swift",
+      "line": 11,
+      "symbol": "PContentView.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ContentView.swift",
+      "line": 14,
+      "symbol": "ContentView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ContentView.swift",
+      "line": 15,
+      "symbol": "ContentView.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Learning_SwiftUIApp.swift",
+      "line": 11,
+      "symbol": "Learning_SwiftUIApp",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Learning_SwiftUIApp.swift",
+      "line": 12,
+      "symbol": "Learning_SwiftUIApp.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ViewModel/ContentViewModel.swift",
+      "line": 25,
+      "symbol": "ContentViewModel.currentPage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ViewModel/ContentViewModel.swift",
+      "line": 26,
+      "symbol": "ContentViewModel.sideMenuOpened",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/ViewModel/ContentViewModel.swift",
+      "line": 28,
+      "symbol": "ContentViewModel.changePage(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Core/AppBody.swift",
+      "line": 22,
+      "symbol": "AppBody.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Core/AppBody.swift",
+      "line": 24,
+      "symbol": "AppBody.generatePage(appGeometry:bodyGeometry:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Core/AppBody.swift",
+      "line": 86,
+      "symbol": "AppBody_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Enums/AppPage.swift",
+      "line": 22,
+      "symbol": "AppPage.home",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Enums/AppPage.swift",
+      "line": 23,
+      "symbol": "AppPage.page1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Enums/AppPage.swift",
+      "line": 24,
+      "symbol": "AppPage.page2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/CardViewProtocol.swift",
+      "line": 10,
+      "symbol": "CardViewProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/CardViewProtocol.swift",
+      "line": 11,
+      "symbol": "CardViewProtocol.cornerRaduis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/CardViewProtocol.swift",
+      "line": 12,
+      "symbol": "CardViewProtocol.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/CardViewProtocol.swift",
+      "line": 13,
+      "symbol": "CardViewProtocol.flipped",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/Cardify.swift",
+      "line": 10,
+      "symbol": "Cardify",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/Cardify.swift",
+      "line": 11,
+      "symbol": "Cardify.cornerRaduis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/Cardify.swift",
+      "line": 12,
+      "symbol": "Cardify.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/Cardify.swift",
+      "line": 13,
+      "symbol": "Cardify.flipped",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/Cardify.swift",
+      "line": 15,
+      "symbol": "Cardify.generateRoundedRectangle(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/Cardify.swift",
+      "line": 36,
+      "symbol": "View.cardify()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/DefaultCardSize.swift",
+      "line": 10,
+      "symbol": "DefaultPageCard",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/Card/DefaultCardSize.swift",
+      "line": 11,
+      "symbol": "DefaultPageCard.defaultCardSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/SafeView.swift",
+      "line": 10,
+      "symbol": "SafeView",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/SafeView.swift",
+      "line": 11,
+      "symbol": "SafeView.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/SafeView.swift",
+      "line": 12,
+      "symbol": "SafeView.ignoreTop",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Modifiers/SafeView.swift",
+      "line": 32,
+      "symbol": "View.safeView(geometry:ignoreTop:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Navbars/BottomNavBuilder.swift",
+      "line": 10,
+      "symbol": "generateBottomNav(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Navbars/LeftMenu.swift",
+      "line": 10,
+      "symbol": "LeftMenu",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Navbars/LeftMenu.swift",
+      "line": 11,
+      "symbol": "LeftMenu.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Navbars/TopNavBuilder.swift",
+      "line": 10,
+      "symbol": "createTopNavIcons(viewModel:image:alignment:system:name:action:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Navbars/TopNavBuilder.swift",
+      "line": 21,
+      "symbol": "generateTopNav(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 10,
+      "symbol": "CurrentPage",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 11,
+      "symbol": "CurrentPage.currentPage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 12,
+      "symbol": "CurrentPage.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 14,
+      "symbol": "CurrentPage.renderHome",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 15,
+      "symbol": "CurrentPage.renderPage1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 16,
+      "symbol": "CurrentPage.renderPage2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/CurrentPage.swift",
+      "line": 18,
+      "symbol": "CurrentPage.renderCurrentPage()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Home.swift",
+      "line": 10,
+      "symbol": "Home",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Home.swift",
+      "line": 11,
+      "symbol": "Home.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Home.swift",
+      "line": 13,
+      "symbol": "Home.defaultCardSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Home.swift",
+      "line": 47,
+      "symbol": "Home_Previews",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page1.swift",
+      "line": 10,
+      "symbol": "Page1",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page1.swift",
+      "line": 11,
+      "symbol": "Page1.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page1.swift",
+      "line": 13,
+      "symbol": "Page1.defaultCardSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page2.swift",
+      "line": 10,
+      "symbol": "Page2",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page2.swift",
+      "line": 11,
+      "symbol": "Page2.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Pages/Page2.swift",
+      "line": 13,
+      "symbol": "Page2.defaultCardSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Protocols/PCurrentPage.swift",
+      "line": 10,
+      "symbol": "PCurrentPage",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Protocols/PCurrentPage.swift",
+      "line": 11,
+      "symbol": "PCurrentPage.currentPage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Protocols/PCurrentPage.swift",
+      "line": 12,
+      "symbol": "PCurrentPage.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Protocols/Page.swift",
+      "line": 10,
+      "symbol": "Page",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Protocols/Page.swift",
+      "line": 11,
+      "symbol": "Page.geometry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Protocols/Page.swift",
+      "line": 12,
+      "symbol": "Page.defaultCardSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Shapes/Pie.swift",
+      "line": 23,
+      "symbol": "Pie.startAngle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leo.yousif/Desktop/Learning SwiftUI/Learning SwiftUI/Views/Shapes/Pie.swift",
+      "line": 24,
+      "symbol": "Pie.endAngle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/leo.yousif/Desktop/Learning SwiftUI"
 }

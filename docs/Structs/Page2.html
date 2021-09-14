@@ -17,7 +17,7 @@
     <a title="Page2 Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (23% documented)</p>
+        <p><a href="../index.html"> Docs</a> (24% documented)</p>
         <p class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
@@ -47,7 +47,7 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/Page.html">Page</a>
+                <a href="../Enums/AppPage.html">AppPage</a>
               </li>
             </ul>
           </li>
@@ -62,6 +62,9 @@
           <li class="nav-group-name">
             <a href="../Functions.html">Functions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:16Learning_SwiftUI17createTopNavIcons9viewModel5image9alignment6system4name6actionQrAA011ContentViewI0C_0bC05ImageVAK9AlignmentVSbSSypyXEtF">createTopNavIcons(viewModel:image:alignment:system:name:action:)</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Functions.html#/s:16Learning_SwiftUI17generateBottomNavyQrAA16ContentViewModelCF">generateBottomNav(_:)</a>
               </li>
@@ -79,19 +82,34 @@
               <li class="nav-group-task">
                 <a href="../Protocols/PContentView.html">PContentView</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PCurrentPage.html">PCurrentPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Page.html">Page</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/CardView.html">CardView</a>
+                <a href="../Structs/AppBody.html">AppBody</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AppBody_Previews.html">AppBody_Previews</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Cardify.html">Cardify</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CurrentPage.html">CurrentPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DefaultPageCard.html">DefaultPageCard</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Home.html">Home</a>
@@ -103,16 +121,13 @@
                 <a href="../Structs/Learning_SwiftUIApp.html">Learning_SwiftUIApp</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/LeftMenu.html">LeftMenu</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Page1.html">Page1</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/Page1_Previews.html">Page1_Previews</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/Page2.html">Page2</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Page2_Previews.html">Page2_Previews</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Pie.html">Pie</a>
@@ -131,7 +146,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page2</span> <span class="p">:</span> <span class="kt">View</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Page2</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Page.html">Page</a></span></code></pre>
 
                 </div>
               </div>
@@ -141,6 +156,60 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI5Page2V8geometry0bC013GeometryProxyVvp"></a>
+                    <a name="//apple_ref/swift/Property/geometry" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI5Page2V8geometry0bC013GeometryProxyVvp">geometry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">geometry</span><span class="p">:</span> <span class="kt">GeometryProxy</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16Learning_SwiftUI5Page2V15defaultCardSizeSo6CGSizeVvp"></a>
+                    <a name="//apple_ref/swift/Property/defaultCardSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16Learning_SwiftUI5Page2V15defaultCardSizeSo6CGSizeVvp">defaultCardSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">defaultCardSize</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -172,7 +241,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="noopener" rel="external"></a>. All rights reserved. (Last updated: 2021-09-11)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="noopener" rel="external"></a>. All rights reserved. (Last updated: 2021-09-14)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="noopener" rel="external">jazzy ♪♫ v0.14.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="noopener" rel="external">Realm</a> project.</p>
         </section>
       </article>
